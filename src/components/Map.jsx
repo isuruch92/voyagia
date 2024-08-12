@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   MapContainer,
@@ -9,12 +9,15 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import { useCities } from "../context/CititesContext";
+import { AppContext } from "../context/AppContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Button from "../components/Button";
 import styles from "./Map.module.css";
 
 function Map() {
+  const mapRef = useRef();
+  const { mapUpdateTrigger } = useContext(AppContext);
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const {
@@ -40,6 +43,13 @@ function Map() {
     [geoLocationPosition]
   );
 
+  useEffect(() => {
+    if (mapRef.current) {
+      console.log("refresh map");
+      mapRef.current.invalidateSize();
+    }
+  }, [mapUpdateTrigger]);
+
   return (
     <div className={styles.mapContainer}>
       {!geoLocationPosition && (
@@ -49,8 +59,10 @@ function Map() {
       )}
 
       <MapContainer
+        key={mapUpdateTrigger}
         center={mapPosition}
         zoom={6}
+        minZoom={4}
         scrollWheelZoom={true}
         className={styles.map}
       >

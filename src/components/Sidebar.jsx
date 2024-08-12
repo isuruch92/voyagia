@@ -1,11 +1,20 @@
+import { useContext } from "react";
+import { Outlet } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import Logo from "./Logo";
 import AppNav from "./AppNav";
-import { Outlet } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 function Sidebar() {
+  const { isCollapsed, handleCollapse } = useContext(AppContext);
+
   return (
-    <div className={styles.sidebar}>
+    <div
+      className={`${styles.sidebar} ${
+        isCollapsed ? styles.sidebarCollapsed : ""
+      }`}
+    >
+      <button onClick={handleCollapse}>{"<<"}</button>
       <Logo />
       <AppNav />
 
