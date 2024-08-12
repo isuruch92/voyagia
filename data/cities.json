@@ -168,19 +168,6 @@
         "lng": "12.492052309300036"
       },
       "id": 98443208
-    },
-    {
-      "cityName": "Palvarpatti",
-      "countryName": "India",
-      "countryCode": "in",
-      "emoji": "🇮🇳",
-      "date": "2024-08-11T20:58:32.841Z",
-      "notes": "test country code",
-      "position": {
-        "lat": "10.79317626959224",
-        "lng": "77.95414174279153"
-      },
-      "id": 98443209
     }
   ]
 }
