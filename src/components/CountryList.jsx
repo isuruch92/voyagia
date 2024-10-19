@@ -4,9 +4,12 @@ import CountryItem from "./CountryItem";
 import Message from "./Message";
 import { useCities } from "../context/CititesContext";
 import Flags from "country-flag-icons/react/3x2";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 function CountryList() {
   const { cities, isLoading } = useCities();
+  const { isCollapsed } = useContext(AppContext);
 
   if (isLoading) {
     return <Spinner />;
@@ -38,7 +41,11 @@ function CountryList() {
   }, []);
 
   return (
-    <ul className={styles.countryList}>
+    <ul
+      className={`${styles.countryList} ${
+        isCollapsed ? styles.countryListCollapsed : ""
+      }`}
+    >
       {countries.map((country) => (
         <CountryItem country={country} key={country.cityId} />
       ))}

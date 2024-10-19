@@ -1,12 +1,13 @@
 .sidebar {
-  flex-basis: 56rem;
-  background-color: var(--color-dark--1);
-  padding: 3rem 5rem 3.5rem 5rem;
+  position: relative;
+  flex-basis: 50rem;
+  background-color: var(--color-dark--3);
+  padding: 3rem 5rem 1rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100dvh;
-  /* transition: all 0.8s ease; */
+  transition: flex-basis 0.3s ease, width 0.3s ease;
 }
 
 .sidebarCollapsed {
@@ -15,8 +16,37 @@
   padding: 1rem;
 }
 
+.sidebarInnerContainer {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.toggleButton {
+  right: 0;
+  top: 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  width: fit-content;
+
+  &:hover {
+    background-color: rgb(100, 100, 100);
+  }
+}
+
 .footer {
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .copyright {

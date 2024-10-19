@@ -11,10 +11,24 @@
   gap: 2rem;
 }
 
+.cityCollapsed {
+  padding: 0;
+  padding-top: 12px;
+  overflow: hidden;
+}
+
 .row {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.rowCollapsed {
+  padding: 0 6px;
+  p,
+  a {
+    font-size: 14px !important;
+  }
 }
 
 .city h6 {
@@ -22,6 +36,9 @@
   font-size: 1.1rem;
   font-weight: 900;
   color: var(--color-light--1);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .city h3 {
@@ -29,6 +46,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .city h3 span {
@@ -44,4 +62,65 @@
 .city a:visited {
   font-size: 1.6rem;
   color: var(--color-brand--1);
+}
+
+.btnCollapsed {
+  Button {
+    width: 100%;
+  }
+}
+
+.anchorLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.anchorLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.anchorLink span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.externalLinkIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.fullWidthButton {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.fullWidthButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttonIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-light--2);
+}
+
+.buttonText {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-light--2);
 }

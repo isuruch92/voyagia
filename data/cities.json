@@ -14,19 +14,6 @@
       "id": 73930385
     },
     {
-      "cityName": "Madrid",
-      "countryName": "Spain",
-      "countryCode": "es",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
       "cityName": "Berlin",
       "countryName": "Germany",
       "countryCode": "de",
@@ -157,15 +144,15 @@
       "id": 98443207
     },
     {
-      "cityName": "Rome",
-      "countryName": "Italy",
-      "countryCode": "it",
-      "emoji": "🇮🇹",
-      "date": "2024-08-11T13:41:48.631Z",
-      "notes": "rtrrth",
+      "cityName": "Leipzig",
+      "countryName": "Germany",
+      "countryCode": "de",
+      "emoji": "🇩🇪",
+      "date": "2025-01-21T22:51:53.000Z",
+      "notes": "sdsdf",
       "position": {
-        "lat": "41.89033584115421",
-        "lng": "12.492052309300036"
+        "lat": "51.3328325650842",
+        "lng": "12.414550781250002"
       },
       "id": 98443208
     }

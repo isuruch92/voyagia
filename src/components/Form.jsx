@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import DatePicker from "react-datepicker";
@@ -11,6 +11,8 @@ import Message from "./Message";
 import Spinner from "./Spinner";
 
 import styles from "./Form.module.css";
+import { AppContext } from "../context/AppContext";
+import Flags from "country-flag-icons/react/3x2";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -38,6 +40,9 @@ function Form() {
   const [notes, setNotes] = useState("");
   const [emoji, setEmoji] = useState("");
   const [gecodingError, setGecodingError] = useState("");
+  const { isCollapsed } = useContext(AppContext);
+
+  const Flag = Flags[countryCode?.toUpperCase()];
 
   useEffect(
     function () {
@@ -105,21 +110,42 @@ function Form() {
 
   return (
     <form
-      className={`${styles.form} ${isLoading ? styles.loading : ""}`}
+      className={`${styles.form} ${isLoading ? styles.loading : ""} ${
+        isCollapsed ? styles.formCollapsed : ""
+      }`}
       onSubmit={handleSubmit}
     >
-      <div className={styles.row}>
+      <div
+        className={`${styles.row} ${isCollapsed ? styles.rowCollapsed : ""}`}
+      >
         <label htmlFor="cityName">City name</label>
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        <span className={styles.flag}>{emoji}</span>
+        <span
+          className={`${styles.flag} ${
+            isCollapsed ? styles.flagCollapsed : ""
+          }`}
+        >
+          {Flag && (
+            <Flag
+              style={{
+                height: isCollapsed ? "18px" : "24px",
+                borderRadius: "4px",
+              }}
+            />
+          )}
+        </span>
       </div>
 
-      <div className={styles.row}>
-        <label htmlFor="date">When did you go to {cityName}?</label>
+      <div
+        className={`${styles.row} ${isCollapsed ? styles.rowCollapsed : ""}`}
+      >
+        <label htmlFor="date">
+          {!isCollapsed ? `When did you go to ${cityName}?` : "Visit Date"}{" "}
+        </label>
         <DatePicker
           id="date"
           selected={date}
@@ -128,16 +154,27 @@ function Form() {
         />
       </div>
 
-      <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to {cityName}</label>
+      <div
+        className={`${styles.row} ${isCollapsed ? styles.rowCollapsed : ""}`}
+      >
+        <label htmlFor="notes">
+          {!isCollapsed ? `Notes about your trip to ${cityName}` : "Your notes"}
+        </label>
         <textarea
           id="notes"
+          className={`${styles.textArea} ${
+            isCollapsed ? styles.textAreaCollapsed : ""
+          }`}
           onChange={(e) => setNotes(e.target.value)}
           value={notes}
         />
       </div>
 
-      <div className={styles.buttons}>
+      <div
+        className={`${styles.buttons} ${
+          isCollapsed ? styles.buttonsCollapsed : ""
+        }`}
+      >
         <Button type="primary">Add</Button>
         <Button
           type="back"

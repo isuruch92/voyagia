@@ -8,6 +8,10 @@
   gap: 2rem;
 }
 
+.formCollapsed {
+  padding: 8px 6px;
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -15,16 +19,42 @@
   position: relative;
 }
 
+.rowCollapsed {
+  label,
+  input {
+    font-size: 14px;
+  }
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
 }
 
+.buttonsCollapsed {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textArea {
+  resize: vertical;
+  height: 150px;
+}
+
+.textAreaCollapsed {
+  font-size: 14px;
+}
+
 .flag {
   position: absolute;
   right: 1rem;
-  top: 2.7rem;
+  top: 2.8rem;
   font-size: 2.8rem;
+}
+
+.flagCollapsed {
+  right: 0;
+  top: -14px;
 }
 
 .form.loading {

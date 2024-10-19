@@ -3,6 +3,10 @@
   margin-bottom: 2rem;
 }
 
+.collapsedNav {
+  margin: 2rem 0;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -25,4 +29,18 @@
 /* CSS Modules feature */
 .nav a:global(.active) {
   background-color: var(--color-dark--0);
+}
+
+.collapsedUl {
+  flex-direction: column;
+}
+
+.collapsedLi {
+  width: 100%;
+  text-align: center;
+  height: 34px;
+}
+
+.collapsedLink {
+  height: 100%;
 }
