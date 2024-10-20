@@ -93,7 +93,7 @@ function Form() {
     };
 
     await createCity(newCity);
-    navigate("/app/citiies");
+    navigate("/app/cities");
   }
 
   if (isLoadingGeocoding) {
