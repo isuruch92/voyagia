@@ -16,7 +16,7 @@ function AppNav({ isSidebarCollapsed }) {
         <li className={isSidebarCollapsed ? styles.collapsedLi : ""}>
           <NavLink
             className={isSidebarCollapsed ? styles.collapsedLink : ""}
-            to="cities"
+            to="citiies"
           >
             Cities
           </NavLink>
