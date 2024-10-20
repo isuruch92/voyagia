@@ -1,0 +1,160 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "countryName": "Portugal",
+      "countryCode": "pt",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "Berlin",
+      "countryName": "Germany",
+      "countryCode": "de",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": 98443197
+    },
+    {
+      "cityName": "Paris",
+      "countryName": "France",
+      "countryCode": "fr",
+      "emoji": "🇫🇷",
+      "date": "2023-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 48.864716,
+        "lng": 2.349014
+      },
+      "id": 4456778
+    },
+    {
+      "cityName": "Galle",
+      "countryName": "Sri Lanka",
+      "countryCode": "lk",
+      "emoji": "🇱🇰",
+      "date": "2024-01-25T12:04:32.630Z",
+      "notes": "fsf",
+      "position": {
+        "lat": "6.009459238059562",
+        "lng": "80.15625000000001"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Torralba de Aragon",
+      "countryName": "Spain",
+      "countryCode": "es",
+      "emoji": "🇪🇸",
+      "date": "2024-01-25T15:10:47.152Z",
+      "notes": "",
+      "position": {
+        "lat": "41.88592102814744",
+        "lng": "-0.5712890625000001"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Chambost-Allieres",
+      "countryName": "France",
+      "countryCode": "fr",
+      "emoji": "🇫🇷",
+      "date": "2024-01-25T15:10:52.126Z",
+      "notes": "",
+      "position": {
+        "lat": "46.01222384063236",
+        "lng": "4.482421875000001"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Ouled Sassi",
+      "countryName": "Algeria",
+      "countryCode": "dz",
+      "emoji": "🇩🇿",
+      "date": "2024-01-25T15:12:51.294Z",
+      "notes": "dfsdf",
+      "position": {
+        "lat": "34.016241889667036",
+        "lng": "4.526367187500001"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Sotkamo",
+      "countryName": "Finland",
+      "countryCode": "fi",
+      "emoji": "🇫🇮",
+      "date": "2024-01-25T15:15:05.489Z",
+      "notes": "",
+      "position": {
+        "lat": "64.19681461100495",
+        "lng": "27.883300781250004"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Val de San Lorenzo",
+      "countryName": "Spain",
+      "countryCode": "es",
+      "emoji": "🇪🇸",
+      "date": "2024-02-03T11:33:06.877Z",
+      "notes": "ssd",
+      "position": {
+        "lat": "42.374778361114195",
+        "lng": "-6.174316406250001"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Tampere",
+      "countryName": "Finland",
+      "countryCode": "fi",
+      "emoji": "🇫🇮",
+      "date": "2024-08-10T23:55:01.577Z",
+      "notes": "",
+      "position": {
+        "lat": "61.49748333745821",
+        "lng": "23.76097732330467"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Oslo",
+      "countryName": "Norway",
+      "countryCode": "no",
+      "emoji": "🇳🇴",
+      "date": "2024-08-11T13:40:53.293Z",
+      "notes": "fghrthrthrt",
+      "position": {
+        "lat": "59.898443617365224",
+        "lng": "10.744227538086896"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Leipzig",
+      "countryName": "Germany",
+      "countryCode": "de",
+      "emoji": "🇩🇪",
+      "date": "2025-01-21T22:51:53.000Z",
+      "notes": "sdsdf",
+      "position": {
+        "lat": "51.3328325650842",
+        "lng": "12.414550781250002"
+      },
+      "id": 98443208
+    }
+  ]
+}
