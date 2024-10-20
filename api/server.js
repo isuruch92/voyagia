@@ -1,11 +1,10 @@
 import jsonServer from "json-server";
+import * as fs from "fs";
+import * as path from "path";
 
 const server = jsonServer.create();
 
 // Uncomment to allow write operations
-import * as fs from "fs";
-import * as path from "path";
-
 const filePath = path.join("cities.json");
 const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
@@ -30,4 +29,4 @@ server.listen(8000, () => {
 });
 
 // Export the Server API
-module.exports = server;
+export default server;
