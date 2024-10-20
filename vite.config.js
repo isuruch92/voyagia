@@ -10,5 +10,6 @@ export default defineConfig({
     "process.env.LOCATIONQ_API_KEY": JSON.stringify(
       process.env.LOCATIONQ_API_KEY
     ),
+    "process.env.BASE_URL": JSON.stringify(process.env.BASE_URL),
   },
 });
