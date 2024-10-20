@@ -12,15 +12,18 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/isuruch92/voyagia.git
+   ```
 2. Install dependencies:
    ```bash
    npm install
+   ```
 3. Start the app:
    ```bash
    npm run dev
+   <!-- "server": "json-server --watch data/cities.json --port 8000 --delay 500", -->
+   ```
 
 ## Technologies Used
-- Frontend: React, leaflet & react-leaflet for maps, react-router-dom for routing, CSS Modules for styling 
+
+- Frontend: React, leaflet & react-leaflet for maps, react-router-dom for routing, CSS Modules for styling
 - Backend: Json Server
-
-

@@ -6,7 +6,7 @@ const server = jsonServer.create();
 import * as fs from "fs";
 import * as path from "path";
 
-const filePath = path.join("city-data.json");
+const filePath = path.join("cities.json");
 const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
 const router = jsonServer.router(db);

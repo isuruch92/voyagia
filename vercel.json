@@ -2,7 +2,7 @@
   "functions": {
     "api/server.js": {
       "memory": 1024,
-      "includeFiles": "city-data.json"
+      "includeFiles": "cities.json"
     }
   },
   "rewrites": [

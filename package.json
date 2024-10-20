@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server --watch data/cities.json --port 8000 --delay 500"
+    "start": "node api/server.js"
   },
   "dependencies": {
     "country-flag-icons": "^1.5.13",
