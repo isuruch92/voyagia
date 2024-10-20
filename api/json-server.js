@@ -1,12 +1,12 @@
-// api/json-server.js
-import jsonServer from "json-server";
+// // api/json-server.js
+// import jsonServer from "json-server";
 
-const server = jsonServer.create();
-const router = jsonServer.router("public/cities.json");
+// const server = jsonServer.create();
+// const router = jsonServer.router("public/cities.json");
 
-const middlewares = jsonServer.defaults();
+// const middlewares = jsonServer.defaults();
 
-server.use(middlewares);
-server.use(router);
+// server.use(middlewares);
+// server.use(router);
 
-module.exports = server;
+// module.exports = server;

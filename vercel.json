@@ -1,5 +1,14 @@
 {
-  "version": 2,
-  "builds": [{ "src": "api/json-server.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/(.*)", "dest": "/api/json-server.js" }]
+  "functions": {
+    "api/server.js": {
+      "memory": 1024,
+      "includeFiles": "cities.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/server.js"
+    }
+  ]
 }
