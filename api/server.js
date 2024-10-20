@@ -3,8 +3,9 @@ import jsonServer from "json-server";
 const server = jsonServer.create();
 
 // Uncomment to allow write operations
-const fs = require("fs");
-const path = require("path");
+import * as fs from "fs";
+import * as path from "path";
+
 const filePath = path.join("city-data.json");
 const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
