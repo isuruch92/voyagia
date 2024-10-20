@@ -155,6 +155,19 @@
         "lng": "12.414550781250002"
       },
       "id": 98443208
+    },
+    {
+      "cityName": "New Delhi",
+      "countryName": "India",
+      "countryCode": "in",
+      "emoji": "🇮🇳",
+      "date": "2024-10-20T11:32:19.520Z",
+      "notes": "aaaaaa",
+      "position": {
+        "lat": "28.604007421649996",
+        "lng": "77.23937988281251"
+      },
+      "id": 98443209
     }
   ]
 }
