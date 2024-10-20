@@ -5,7 +5,7 @@ const server = jsonServer.create();
 // Uncomment to allow write operations
 const fs = require("fs");
 const path = require("path");
-const filePath = path.join("data/cities.json");
+const filePath = path.join("city-data.json");
 const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
 const router = jsonServer.router(db);
